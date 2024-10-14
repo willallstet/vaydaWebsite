@@ -26,12 +26,15 @@
   
   .modal-title-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Revert to space-between */
     align-items: center;
-    background-color: #000080;
-    color: #fff;
-    padding: 5px;
+    background-color: #000080; /* Example background color */
+    color: #fff; /* Text color */
+    padding: 0px;
     width: 100%;
+  }
+  .modal-title {
+    padding-left: 5px;
   }
   
   .exit-button {

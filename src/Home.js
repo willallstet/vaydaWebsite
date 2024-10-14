@@ -48,7 +48,7 @@ const Home = () => {
     <div className="home-container">
       <a href="/" style={{ textDecoration: 'none' }}><h1>VAYDA</h1></a>
       <div className="icon-container">
-        <a href="/#" onClick={openVintageModal} className="icon" style={{ top: window.innerHeight * 0.05, left: window.innerWidth * 0.1 }}>
+        <a href="/#" onClick={openVintageModal} className="icon" style={{ top: window.innerHeight * -0.05, left: window.innerWidth * 0.1 }}>
           <img src="/gifs/shopping-bag-transparent.gif" alt="spinning green shopping bag" className="spinning-icon" />
           <div>merch</div>
         </a>
@@ -67,7 +67,7 @@ const Home = () => {
           </div>
           <div>insta</div>
         </a>
-        <a href="https://x.com/vaydaprimadonna" target="_blank" rel="noopener noreferrer" className="icon" style={{ top: window.innerHeight * 0.45, left: window.innerWidth * 0.6 }}>
+        <a href="https://x.com/vaydaprimadonna" target="_blank" rel="noopener noreferrer" className="icon" style={{ top: window.innerHeight * 0.5, left: window.innerWidth * 0.6 }}>
             <img src="/cute-decorations/twitter.gif" alt="pixelated gif of the twitter logo cycling between blue, green, and red" className="spinning-icon" style={{ width: window.innerWidth * 0.075, height: 'auto' }} />
           <div>twitter</div>
         </a>
