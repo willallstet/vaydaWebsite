@@ -53,56 +53,27 @@
     cursor: pointer;
 }
 
-.music-modal-icon-1 {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 50%;
-    color: black;
-    width: 1;
+.music-modal-icon {
+  position: relative;
+  width: 20vw; /* Adjust width to fit two icons per row */
+  max-height: 20vh; /* Ensure each icon is only 25% of the modal height max */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
-.music-modal-icon-2 {
-    position: absolute;
-    top: 20%;
-    left: 60%;
-    width: 50%;
-    color: black;
-    width: 1;
+.music-modal-icon img {
+  max-width: 20vw;
+  max-height: 20vh; /* Ensure the image doesn't exceed the icon's height */
 }
 
-.music-modal-icon-3 {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    width: 50%;
-    color: black;
-    width: 1;
+.music-modal-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 80vh;
+  overflow-y: scroll; /* Remove scroll */
 }
- .music-modal-icon-4 {
-    position: absolute;
-    top: 70%;
-    left: 60%;
-    width: 50%;
-    color: black;
-    width: 1;
- }
- .music-modal-icon-1 img {
-    width: 10vw;
-    padding: 10px;
-  }
-  .music-modal-icon-2 img {
-    width: 10vw;
-    padding: 10px;
-  }
-  .music-modal-icon-3 img {
-    width: 10vw;
-    padding: 10px;
-  }
-  .music-modal-icon-4 img {
-    width: 10vw;
-    padding: 10px;
-  }
   @media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
     .music-modal-content {
       display: flex;
@@ -110,15 +81,25 @@
       justify-content: flex-start;
       align-items: center;
       overflow-y: scroll;
+      width: 80vw;
     }
-  
-    .music-modal-icon-1,
-    .music-modal-icon-2,
-    .music-modal-icon-3,
-    .music-modal-icon-4 {
-      position: static !important ; /* Remove absolute positioning */
-      width: 45%; /* Adjust width to fit two icons per row */
-      margin: 5px; /* Add some margin for spacing */
+    .music-modal-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      height: auto;
+      overflow-y: scroll; /* Remove scroll */
+    }
+    .music-modal-icon {
+      width: 80vw;
+      height: auto;
+      padding: 10px;
+    }
+    .music-modal-icon img {
+      width: 80vw;
+      height: auto;
     }
   }
   

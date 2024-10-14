@@ -62,7 +62,7 @@ const Home = () => {
         </a>
         <a href="https://www.instagram.com/1vayda/" target="_blank" rel="noopener noreferrer" className="icon" style={{ top: window.innerHeight * 0.1, left: window.innerWidth * 0.35 }}>
           <div style={{ position: 'relative', display: 'inline-block' }}>
-            <img src="/cute-decorations/vayda_ig_edit.png" alt="image of Vayda posing" className="spinning-icon" style={{ width: window.innerWidth * 0.075, height: 'auto' }} />
+            <img src="/cute-decorations/vayda_ig_edit.png" alt="image of Vayda posing" className="spinning-icon" style={{ width: window.innerWidth * 0.1, height: 'auto' }} />
             <img src="/cute-decorations/spinning-heart.gif" alt="spinning heart" style={{ position: 'absolute', top: -10, left: -10, width: '30%', height: '30%', zIndex: 10000 }} />
           </div>
           <div>insta</div>
@@ -73,20 +73,15 @@ const Home = () => {
         </a>
         <a href="https://www.youtube.com/channel/UCtfB-bYyaLSKxara8-oUFdg" target="_blank" rel="noopener noreferrer" className="icon" style={{ top: window.innerHeight * 0.5, left: window.innerWidth * 0.2 }}>
           <div style={{ position: 'relative', display: 'inline-block' }}>
-            <img src="/cute-decorations/vayda-youtube.gif" alt="clip of vayda music video within a windows 95 style window" className="spinning-icon" style={{ width: window.innerWidth * 0.1, height: 'auto' }} />
+            <img src="/cute-decorations/vayda-youtube.gif" alt="clip of vayda music video within a windows 95 style window" className="spinning-icon" style={{ width: window.innerWidth * 0.12, height: 'auto' }} />
           </div>
           <div>youtube</div>
         </a>
-        <a href="#" onClick={openModal} className="icon" style={{ top: window.innerHeight * 0.35, left: window.innerWidth * 0.35 }}>
+        <a href="#" onClick={openModal} className="icon" style={{ top: window.innerHeight * 0.4, left: window.innerWidth * 0.4 }}>
           <img src="/gifs/mail-transparent.gif" alt="spinning 3D mail icon" className="spinning-icon" style={{ width: window.innerWidth * 0.075, height: 'auto' }} />
           <div>newsletter</div>
         </a>
-        {/*
-        <div className="image-wrapper" style={{ top: window.innerHeight * 0.01, left: window.innerWidth * 0.4 }}>
-          <img src="/gifs/textures/AdobeStock_712476627.jpeg" alt="pixel texture overlay" className="texture-overlay" />
-          <img src="/gifs/wedding-dress.gif" alt="Vayda dancing gif" className="vayda-gif" />
-        </div>
-        */}
+
       </div>
       <Modal show={isModalOpen} onClose={closeModal} />
       <MerchModal show={isVintageModalOpen} onClose={closeVintageModal} />
