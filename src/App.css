@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+.silkscreen-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+.App {
+  text-align: center;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Silkscreen", sans-serif;
+  z-index: 1; /* Ensure this is higher than the sparkles-container */
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  margin: 10px;
+  z-index: 1;
+  text-shadow: 1px 1px 2px #fff, 0 0 10px #fff, 0 0 5px #fff;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: perspective(500px) rotateX(10deg) rotateY(10deg) rotate(360deg);
+}
+
+.spinning-icon {
+  width: 10vw;
+  height: auto;
+  z-index: 100;
+  position: relative;
+}
+
+a {
+  color: white;
+}
+
+.sparkles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.658);
+  z-index: 0; /* Ensure this is lower than other elements */
+}
+
+.sparkle {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 1;
+}
+
+@keyframes fade-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.terminal-green {
+  font-family: monospace;
+  color: #008f00ab; /* Terminal green color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
