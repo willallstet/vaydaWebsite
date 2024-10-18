@@ -17,21 +17,29 @@ const MusicModal = ({ show, onClose }) => {
                     </div>
                 </div>
                 <div className='music-modal-icons'>
-                    <a href="https://open.spotify.com/artist/3x8MpdnONnHCqbwizrn29H?si=vP_pzX7eT869LNoAqjg4ug" target="_blank" className='music-modal-icon'>
-                        <img src="/cute-decorations/spotify-logo.png" alt="Link to Vayda's Spotify Profile" />
-                        <div>spotify</div>
+                    <a href="https://ffm.to/vaytrix" target="_blank" className='music-modal-icon'>
+                        <img src="/gifs/album-covers/VAYTRIX.jpeg" alt="Vaytrix Album Cover" />
+                        <div>vaytrix</div>
                     </a>
                     <a href="https://music.apple.com/us/artist/vayda/1511871893" target="_blank" className='music-modal-icon'>
-                        <img src="/cute-decorations/apple-music.png" alt="Link to Vayda's Apple Music Profile" />
-                        <div>apple music</div>
+                    <img src="/gifs/album-covers/fever.jpeg" alt="Fever Album Cover" />
+                        <div>fever</div>
                     </a>
                     <a href="https://tidal.com/browse/artist/6118683" target="_blank" className='music-modal-icon'>
-                        <img src="/cute-decorations/tidal-logo.png" alt="Link to Vayda's Tidal Profile" />
-                        <div>tidal</div>
+                    <img src="/gifs/album-covers/forrest-gump.jpeg" alt="Forrest Gump Album Cover" />
+                        <div>forrest gump</div>
                     </a>
-                    <a href="https://soundcloud.com/violetnights" target="_blank" className='music-modal-icon'>
-                        <img src="/cute-decorations/soundcloud-logo.png" alt="Link to Vayda's Soundcloud Profile" />
-                        <div>soundcloud</div>
+                    <a href="https://ffm.to/vaytrix" target="_blank" className='music-modal-icon'>
+                        <img src="/gifs/album-covers/dawn.jpeg" alt="Dawn Album Cover" />
+                        <div>dawn</div>
+                    </a>
+                    <a href="https://ffm.to/vaytrix" target="_blank" className='music-modal-icon'>
+                        <img src="/gifs/album-covers/breeze.jpg" alt="Breeze Album Cover" />
+                        <div>breeze</div>
+                    </a>
+                    <a href="https://ffm.to/vaytrix" target="_blank" className='music-modal-icon'>
+                        <img src="/gifs/album-covers/vv.jpeg" alt="VV Album Cover" />
+                        <div>vv</div>
                     </a>
                 </div>
             </div>

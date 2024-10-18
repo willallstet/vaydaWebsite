@@ -44,6 +44,7 @@
     color: #fff; /* Text color */
     padding: 5px;
     width: 100%;
+    z-index: 99999999999999999999999;
 }
 
 .exit-button {
@@ -55,8 +56,8 @@
 
 .music-modal-icon {
   position: relative;
-  width: 20vw; /* Adjust width to fit two icons per row */
-  max-height: 20vh; /* Ensure each icon is only 25% of the modal height max */
+  width: 15vw; /* Adjust width to fit two icons per row */
+  max-height: 15vh; /* Ensure each icon is only 25% of the modal height max */
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
@@ -70,18 +71,21 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  max-width: 50vw;
   height: 80vh;
   overflow-y: scroll; /* Remove scroll */
+  margin-top: -2em; /* Move up by 1.5em */
 }
   @media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
     .music-modal-content {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      flex-direction: row;
+      justify-content: center;
       align-items: center;
       overflow-y: scroll;
       width: 80vw;
+      max-width: 80vw;
     }
     .music-modal-icons {
       display: flex;
@@ -90,16 +94,21 @@
       align-items: center;
       width: 80vw;
       height: auto;
-      overflow-y: scroll; /* Remove scroll */
+      overflow-y: visible;
+      margin-top: 0; /* Move up by 1.5em */
+
     }
     .music-modal-icon {
       width: 80vw;
       height: auto;
       padding: 10px;
+      max-height: 80vh;
     }
     .music-modal-icon img {
-      width: 80vw;
-      height: auto;
+      width: 70vw;
+      height: 70vw; /* Lock the height to the width to maintain a 1:1 ratio */
+      max-width: 70vw;
+      max-height: 70vw;
     }
   }
   

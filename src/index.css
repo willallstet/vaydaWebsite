@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
@@ -27,3 +28,4 @@ body::before {
   z-index: 1000000000001;
   pointer-events: none; /* Allow clicks to pass through */
 }
+

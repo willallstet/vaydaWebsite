@@ -53,3 +53,8 @@
     cursor: pointer;
     font-size: 1.2em; /* Adjust size as needed */
   }
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 80vw;
+    }
+  }
