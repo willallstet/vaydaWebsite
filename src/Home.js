@@ -53,7 +53,7 @@ const Home = () => {
           <div>merch</div>
         </a>
         <a href="#" onClick={openMusicModal} className="icon" style={{ top: window.innerHeight * 0, left: window.innerWidth - window.innerWidth / 1.9 }}>
-          <img src="/gifs/cd.gif" alt="spinning CD" className="spinning-icon" style={{ width: '90%', height: '90%' }}/>
+          <img src="/gifs/CD.gif" alt="spinning CD" className="spinning-icon" style={{ width: '90%', height: '90%' }}/>
           <div>music</div>
         </a>
         <a href="https://www.instagram.com/1vayda/" target="_blank" rel="noopener noreferrer" className="icon" style={{ top: window.innerHeight * 0, left: window.innerWidth * 0.3 }}>
@@ -65,7 +65,7 @@ const Home = () => {
         </a>
         <a href="https://www.tiktok.com/@akavayda?_t=8qeufEGsO8B&_r=1" target="_blank" rel="noopener noreferrer" className="icon" style={{ top: window.innerHeight *0.3, left: window.innerWidth * 0.7 }}>
           <div style={{ position: 'relative', display: 'inline-block' }}>
-            <img src="/gifs/tiktok-pink.gif" alt="TikTok UI showing Vayda Dancing" className="spinning-icon" style={{ width: window.innerWidth * 0.075, height: 'auto' }} />
+            <img src="/gifs/tiktok-no-border-razr.gif" alt="TikTok UI showing Vayda Dancing" className="spinning-icon" style={{ width: window.innerWidth * 0.1, height: 'auto' }} />
           </div>
           <div>tiktok</div>
         </a>
