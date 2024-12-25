@@ -3,20 +3,37 @@
     height: 100vh;
     width: 100vw;
     overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-x: hidden; /* Hides the horizontal scrollbar */
   }
   
   .icon-container {
-    position: relative;
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   
   .icon {
-    position: absolute;
+    position: static;
+    height: fit-content;
+    padding: calc(100vh / 100 * 4.5) calc(100vw / 100 * 2);
   }
   
   .spinning-icon {
-    width: 20vw;
-    height: 20vw;
+    width: 21vw;
+    height: auto;
   }
+  @media (max-width: 600px) {
+    .spinning-icon {
+      width: 33vw;
+    }
+  }
+  
   .image-wrapper {
     position: absolute;
     width: calc(100vw / 10);
@@ -41,23 +58,24 @@
     object-fit: cover;
     z-index: 10000000;
   }
-  
-  @media (max-width: 768px) {
-    .icon-container {
-      position: static;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
-    .spinning-icon {
-      width: 30vw !important;
-      height: auto !important;
-      padding: 5vw;
-    }
-  
-    .icon {
-      position: static;
-      margin: 10px;
-    }
-  }
+
+/* Add this CSS to style the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background of the scrollbar track */
+  border-top-left-radius: 0px; /* Rounded top-left corner for the track */
+  border-top-right-radius: 0px; /* Rounded top-right corner for the track */
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 26); /* Color of the scrollbar thumb */
+  border-radius: 0px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0088; /* Color of the thumb on hover */
+}

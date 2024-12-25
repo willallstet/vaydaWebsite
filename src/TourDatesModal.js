@@ -31,14 +31,18 @@ const TourDatesModal = ({ show, onClose }) => {
                     </div>
                 </div>
                 <div className="tour-dates-list">
-                    {tourDates.map((event, index) => (
-                        <div key={index} className="tour-dates-item">
-                            <div className="tour-dates-city">{event.venue.city}</div>
-                            <div className="tour-dates-date">{new Date(event.datetime).toLocaleDateString()}</div>
-                            <div className="tour-dates-venue">{event.venue.name}</div>
-                            <a href={event.url} target="_blank" rel="noopener noreferrer" className="buy-tickets-button">Buy Tickets</a>
-                        </div>
-                    ))}
+                    {tourDates.length === 0 ? (
+                        <div className="no-shows-message" style={{ fontSize: '3rem', fontWeight: 'bold', textAlign: 'center', marginTop: '20px' }}>No upcoming shows</div>
+                    ) : (
+                        tourDates.map((event, index) => (
+                            <div key={index} className="tour-dates-item">
+                                <div className="tour-dates-city">{event.venue.city}</div>
+                                <div className="tour-dates-date">{new Date(event.datetime).toLocaleDateString()}</div>
+                                <div className="tour-dates-venue">{event.venue.name}</div>
+                                <a href={event.url} target="_blank" rel="noopener noreferrer" className="buy-tickets-button">Buy Tickets</a>
+                            </div>
+                        ))
+                    )}
                 </div>
             </div>
         </div>
